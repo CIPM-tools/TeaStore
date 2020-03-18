@@ -139,7 +139,7 @@ public class SlopeOneRecommender extends AbstractRecommender {
 	}
 
 	@Override
-	protected void executePreprocessing() {
+	protected void trainForRecommender() {
 		// The buying matrix is considered to be the rating
 		// i.e. the more buys, the higher the rating
 		buildDifferencesMatrices(getUserBuyingMatrix());

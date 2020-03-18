@@ -53,8 +53,8 @@ public class PreprocessedSlopeOneRecommender extends SlopeOneRecommender {
 	}
 
 	@Override
-	protected void executePreprocessing() {
-		super.executePreprocessing();
+	protected void trainForRecommender() {
+		super.trainForRecommender();
 		predictedRatings = new HashMap<>();
 		// Moving the matrix calculation to the preprocessing to optimize runtime
 		// behavior

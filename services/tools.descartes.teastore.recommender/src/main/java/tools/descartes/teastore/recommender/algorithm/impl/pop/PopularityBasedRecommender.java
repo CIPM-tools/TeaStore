@@ -46,7 +46,7 @@ public class PopularityBasedRecommender extends AbstractRecommender {
 	}
 
 	@Override
-	protected void executePreprocessing() {
+	protected void trainForRecommender() {
 		// assigns each product a quantity
 		counts = new HashMap<>();
 		// calculate product frequencies
